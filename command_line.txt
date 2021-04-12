@@ -1,0 +1,92 @@
+
+shell : command line interpreter
+terminal : the environment of commands
+CMD : the original shell for the Microsoft Dos os
+PowerShell : like cmd but better
+
+why we learn command line?
+- use less system resources
+- intelligent tab : to complete paths & common commands
+- use loops to repeat command, regular expression
+- commands not deprecated
+
+notes:
+- Unix systems[Linux,Mac]
+- windowsButton + RButton : to open Run then write cmd to open cmd
+- tab to complete commands & paths
+
+ipconfig : to show ip configuration in pc
+color : default
+color --help : to bring colors list 
+color <background_color><text_color> : to change colors of background & text
+title <title_name> : to change title name
+mkdir <folder_name> : to create new folder has name folder_name
+explorer : open pc
+clear //or cls : to clear screen
+ls :show list of directories & files in current directory
+dir : show list of directories & files with informations in current directory 
+
+cd .. : like press back
+cd <folder_name> : to enter in folder
+cd \ : go to the root, like c:\
+mkdir <folder_name> <folder_name> <folder_name> ... : to create more folders in current directory
+	ex : mkdir html css js java kotlin ccna a+
+mkdir "folder name" : to create folder has space
+	ex: mkdir myFolder
+mkdir ..\<folder_name> : to create folder in the previous directory
+mkdir <folder_name_with_path> : to create folder in this path
+	ex: mkdir c:\css
+note: move command used to rename and move
+move <name> <another_name> : to rename file
+mv <name> <another_name> : to rename file
+mv <name> <another_name_exist> : to move in exist folder; not making rename because it found exist folder has name another_name_exist
+mv <name> .. : to put name in back directory
+mv <name> \ : to put name on root
+	ex: mv myFolder \
+rename <name> <another_name> : for renaming
+cp: used to copy
+cp --help: to show settings of cp
+cp -r <name> <another_name>: to make a copy of name
+	ex: cp -r css css2
+rm --help: to show settings of remove
+rm -r <name>: to remove name if empty or not
+rm -d <name>: to remove empty name
+cat(catinate(concatenate)): used to show content of files; can used for copy
+cat <file_name>: to show content of file name
+cat <file_name> <another_file_name>: to show content of files
+cat <file_name> > <another_name>: make copy with content ; override
+cat <file_name> >> <another_name>: make copy with content; append
+cat * : to show all content files 
+cat * > <file_name> : to put all contents into file_name
+echo "message": used to print
+echo "mycontent" > <file_name>: used to enter content into file if exist; if not exist create file and enter content; content is override
+echo "mycontent" >> <file_name>: used to enter content into file if exist; if not exist create file and enter content; content is append
+grep(global regular expression print)
+grep '<search_name>' <file_name>: to search in file_name of search_name
+grep --help : to show settings of grep
+grep '<search_name>' -r : to show folders have search_name
+grep '<search_name>' -r -l : to show list of folders that have search_name
+grep '<search_name>' -r <path> : can search in any directory
+exit : to close terminal
+touch <file_name> : to create file
+file <file_name> : to know file_name type
+move /? : to show settings of move
+ping <web> : to check if server working
+ping <web> -t : to check if server working; not end
+note: ctrl+c : to stop
+tree /a : to show tree of directories
+osk : to open screen keyboasrd
+tasklist : to show all running process
+explorer <file_name> : to open the file
+//or
+<file_name> : to open the file
+alias <alias_name> <name> : to make shortcut of name
+&& : used to execute 2 orders
+	ex: ipconfig && touch myFile.txt
+whoami : to show user_name
+systeminfo : to show all information system
+
+ex: 
+ping google.com > gfile.txt
+cat gfile.txt
+ipconfig | clip : to copy ipconfig
